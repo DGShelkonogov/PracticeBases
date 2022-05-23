@@ -1,0 +1,27 @@
+﻿@model List<BaseRow>
+
+@{
+    ViewData["Title"] = "Search";
+    Layout = "_SearchLayout";
+}
+
+@{
+    if (Model != null)
+    {
+        <div class="list-group">
+            @{
+                foreach (var item in Model)
+                {
+                    <a asp-action="DetailsStudentInfo" asp-route-id="@item.Id" class="list-group-item list-group-item-action">
+                        <h5 class="list-group-item-heading">Студент: @item.Student.Name</h5>
+                        <p class="list-group-item-text">Группа: @item.Group.Title</p>
+                        <p class="list-group-item-text">Организация: @item.OrganizationPlus.Organization.Title</p>
+                        <p class="list-group-item-text">Руководитель от техникума: @item.SupervisorCol.Human.Name</p>
+                        <p class="list-group-item-text">Руководитель от организации: @item.SupervisorOrg.Human.Name</p>
+                    </a>
+                }
+            }
+        </div>
+    }
+}
+

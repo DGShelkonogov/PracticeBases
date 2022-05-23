@@ -1,0 +1,55 @@
+﻿@model Practice_bases.ViewModel.DetailsSupervisorColViewModel
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Details";
+}
+
+@{
+    /*if (Model.isAdmin)
+    {*/
+        <form asp-action="DetailsSupervisorCol" asp-controller="Search">
+            <input type="hidden" asp-for="PhoneColNull" />
+            <input type="hidden" asp-for="SupervisorColNull" />
+            <input type="hidden" asp-for="MailSupervisorColNull" />
+            <input type="hidden" asp-for="PhoneCol.Id" />
+            <input type="hidden" asp-for="SupervisorCol.Id" />
+            <input type="hidden" asp-for="MailSupervisorCol.Id" />
+    
+    
+            <div class="form-group">
+                <h2 class="list-group-item-heading">Руководитель от техникума: </h2>
+                <input type="text"
+                       asp-for="SupervisorCol.Name"
+                       class="form-control"
+                       placeholder="Руководитель от техникума"/>
+            </div>
+
+            <div class="form-group">
+                <p class="list-group-item-text">Телефон руководителя от техникума: </p>
+                <input type="text"
+                       asp-for="PhoneCol.Title"
+                       class="form-control"
+                       placeholder="Телефон руководителя от техникума"/>
+            </div>
+
+            <div class="form-group">
+                <p class="list-group-item-text">Почта руководителя от техникума: </p>
+                <input type="text"
+                       asp-for="MailSupervisorCol.Title"
+                       class="form-control"
+                       placeholder="Почта руководителя от техникума"/>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="update" class="btn btn-default">
+            </div>
+        </form>
+   
+        <div class="container-fluid">
+            <p class="list-group-item-text">Руководитель от техникума: @Model.SupervisorCol.Name.</p>
+            <p class="list-group-item-text">Телефон руководителя от техникума: @Model.PhoneCol.Title</p>
+            <p class="list-group-item-text">Почта руководителя от техникума: @Model.MailSupervisorCol.Title</p>
+        </div>
+    
+}

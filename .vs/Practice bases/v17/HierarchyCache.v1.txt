@@ -1,0 +1,317 @@
+﻿++Решение "Practice bases" ‎(проекты: 1 из 1)
+i:{00000000-0000-0000-0000-000000000000}:Practice bases.sln
+++Practice bases
+i:{00000000-0000-0000-0000-000000000000}:Practice bases
+++Connected Services 
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:>475
+++Properties
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\properties\
+++launchSettings.json
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\properties\launchsettings.json
+++wwwroot
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\
+++Зависимости
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:>474
+++Controllers
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\controllers\
+++AccountController.cs
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\controllers\accountcontroller.cs
+++HomeController.cs
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\controllers\homecontroller.cs
+++SearchController.cs
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\controllers\searchcontroller.cs
+++Models
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\models\
+++ViewModel
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\viewmodel\
+++Views
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\views\
+++appsettings.json
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\appsettings.json
+++Program.cs
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\program.cs
+++wwwroottest.xlsx
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroottest.xlsx
+++Зависимости службы не обнаружены
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:>476
+++css
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\css\
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\css\
+++ExcelFiles
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\excelfiles\
+++js
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\js\
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\js\
+++lib
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\
+++favicon.ico
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\favicon.ico
+++COM
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:com
+++Анализаторы
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:анализаторы
+++Пакеты
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:пакеты
+++Платформы
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:платформы
+++Address.cs
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\models\address.cs
+++ApplicationContext.cs
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\models\applicationcontext.cs
+++Base.cs
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\models\base.cs
+++BaseRow.cs
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\models\baserow.cs
+++ErrorViewModel.cs
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\models\errorviewmodel.cs
+++Group.cs
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\models\group.cs
+++Human.cs
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\models\human.cs
+++Mail.cs
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\models\mail.cs
+++Organization.cs
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\models\organization.cs
+++OrganizationPlus.cs
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\models\organizationplus.cs
+++Parser.cs
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\models\parser.cs
+++Phone.cs
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\models\phone.cs
+++Role.cs
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\models\role.cs
+++Supervisor.cs
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\models\supervisor.cs
+++User.cs
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\models\user.cs
+++Website.cs
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\models\website.cs
+++BaseViewModel.cs
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\viewmodel\baseviewmodel.cs
+++DetailsOrganizationViewModel.cs
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\viewmodel\detailsorganizationviewmodel.cs
+++DetailsStudentViewModel.cs
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\viewmodel\detailsstudentviewmodel.cs
+++DetailsSupervisorColViewModel.cs
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\viewmodel\detailssupervisorcolviewmodel.cs
+++DetailsSupervisorOrgViewModel.cs
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\viewmodel\detailssupervisororgviewmodel.cs
+++LoginModel.cs
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\viewmodel\loginmodel.cs
+++Account
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\views\account\
+++Home
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\views\home\
+++Search
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\views\search\
+++Shared
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\views\shared\
+++_ViewImports.cshtml
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\views\_viewimports.cshtml
+++_ViewStart.cshtml
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\views\_viewstart.cshtml
+++appsettings.Development.json
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\appsettings.development.json
+++site.css
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\css\site.css
+++book.xlsx
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\excelfiles\book.xlsx
+++book2.xlsx
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\excelfiles\book2.xlsx
+++базы практик.xlsx
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\excelfiles\базы практик.xlsx
+++site.js
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\js\site.js
+++bootstrap
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\
+++jquery
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\jquery\
+++jquery-validation
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\jquery-validation\
+++jquery-validation-unobtrusive
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\jquery-validation-unobtrusive\
+++Interop.Microsoft.Office.Core
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\obj\debug\net6.0\interop.microsoft.office.core.dll
+++Interop.Microsoft.Office.Interop.Excel
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\obj\debug\net6.0\interop.microsoft.office.interop.excel.dll
+++Microsoft.AspNetCore.Analyzers
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.App.Analyzers
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.Internal.SourceGenerator.Transport
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.internal.sourcegenerator.transport.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\.nuget\packages\microsoft.entityframeworkcore.analyzers\7.0.0-preview.2.22153.1\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\.nuget\packages\microsoft.extensions.logging.abstractions\7.0.0-preview.2.22152.2\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\program files\dotnet\sdk\6.0.100\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++System.Text.Json.SourceGeneration
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.0\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.AspNetCore.Identity.UI (6.0.4)
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:>491
+++Npgsql.EntityFrameworkCore.PostgreSQL (7.0.0-preview.2)
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:>490
+++Microsoft.AspNetCore.App
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\microsoft.aspnetcore.app
+++Microsoft.NETCore.App
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\microsoft.netcore.app
+++Login.cshtml
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\views\account\login.cshtml
+++CreateBase.cshtml
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\views\home\createbase.cshtml
+++Index.cshtml
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\views\home\index.cshtml
+++DetailsOrganization.cshtml
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\views\search\detailsorganization.cshtml
+++DetailsStudentInfo.cshtml
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\views\search\detailsstudentinfo.cshtml
+++DetailsSupervisorCol.cshtml
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\views\search\detailssupervisorcol.cshtml
+++DetailsSupervisorOrg.cshtml
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\views\search\detailssupervisororg.cshtml
+++SearchOrganization.cshtml
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\views\search\searchorganization.cshtml
+++SearchStudent.cshtml
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\views\search\searchstudent.cshtml
+++SearchSupervisorCol.cshtml
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\views\search\searchsupervisorcol.cshtml
+++SearchSupervisorOrg.cshtml
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\views\search\searchsupervisororg.cshtml
+++_Layout.cshtml
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\views\shared\_layout.cshtml
+++_SearchLayout.cshtml
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\views\shared\_searchlayout.cshtml
+++_ValidationScriptsPartial.cshtml
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\views\shared\_validationscriptspartial.cshtml
+++Error.cshtml
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\views\shared\error.cshtml
+++dist
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\jquery\dist\
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\jquery-validation\dist\
+++LICENSE
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\license
+++LICENSE.txt
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\jquery\license.txt
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\jquery-validation-unobtrusive\license.txt
+++LICENSE.md
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\jquery-validation\license.md
+++jquery.validate.unobtrusive.js
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+++_Layout.cshtml.css
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\views\shared\_layout.cshtml.css
+++jquery.js
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\jquery\dist\jquery.js
+++additional-methods.js
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\jquery-validation\dist\additional-methods.js
+++jquery.validate.js
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+++jquery.validate.unobtrusive.min.js
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+++bootstrap.css
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+++bootstrap-grid.css
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+++bootstrap-reboot.css
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+++bootstrap-utilities.css
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+++bootstrap.js
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+++jquery.min.js
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\jquery\dist\jquery.min.js
+++additional-methods.min.js
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+++jquery.validate.min.js
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+++bootstrap.css.map
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+++bootstrap.min.css
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+++bootstrap.rtl.css
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+++bootstrap-grid.css.map
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+++bootstrap-grid.min.css
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+++bootstrap-grid.rtl.css
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+++bootstrap-reboot.css.map
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+++bootstrap-reboot.min.css
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+++bootstrap-reboot.rtl.css
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+++bootstrap-utilities.css.map
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+++bootstrap-utilities.min.css
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+++bootstrap-utilities.rtl.css
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+++bootstrap.bundle.js
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+++bootstrap.esm.js
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+++bootstrap.js.map
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+++bootstrap.min.js
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+++jquery.min.map
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\jquery\dist\jquery.min.map
+++bootstrap.min.css.map
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+++bootstrap.rtl.css.map
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+++bootstrap.rtl.min.css
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+++bootstrap-grid.min.css.map
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+++bootstrap-grid.rtl.css.map
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+++bootstrap-grid.rtl.min.css
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+++bootstrap-reboot.min.css.map
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+++bootstrap-reboot.rtl.css.map
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+++bootstrap-reboot.rtl.min.css
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+++bootstrap-utilities.min.css.map
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+++bootstrap-utilities.rtl.css.map
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+++bootstrap-utilities.rtl.min.css
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+++bootstrap.bundle.js.map
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+++bootstrap.bundle.min.js
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+++bootstrap.esm.js.map
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+++bootstrap.esm.min.js
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+++bootstrap.min.js.map
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+++bootstrap.rtl.min.css.map
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+++bootstrap-grid.rtl.min.css.map
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+++bootstrap-reboot.rtl.min.css.map
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+++bootstrap-utilities.rtl.min.css.map
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+++bootstrap.bundle.min.js.map
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+++bootstrap.esm.min.js.map
+i:{0fe77ad7-3148-461f-b1b8-bd6041fee771}:c:\users\dana\riderprojects\practice bases\practice bases\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map

@@ -1,0 +1,28 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+<form asp-action="Search" asp-controller="Search" method="post" enctype="multipart/form-data">
+    
+    <div class="mb-3">
+        <div class="d-flex flex-row">
+            <select name="number">
+                <option value="1">По студентам</option>
+                <option value="2">по руководителям по практике от техникума </option>
+                <option value="3">по руководителям по практике от организации</option>
+                <option value="4">по организациям</option>
+            </select>
+            <input type="text" class="form-control" name="name">
+            <input type="submit" value="Поиск"/>
+        </div>
+    </div>
+</form>
+@RenderBody()
+</body>
+</html>

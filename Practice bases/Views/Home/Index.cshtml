@@ -1,0 +1,36 @@
+﻿@model List<Base>;
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+
+<div class="d-flex flex-column">
+    <div class="text-center">
+        <h1 class="display-4">Базы практик</h1>
+        
+        <a asp-action="CreateBase">
+            <button type="button" class="btn btn-primary">Create base</button>
+        </a>
+    </div>
+    
+    @{
+        if (Model != null)
+        {
+            <div class="list-group">
+                @{
+                    foreach (var item in Model)
+                    {
+                        <a class="list-group-item list-group-item-action">
+                            <h5 class="list-group-item-heading">База практик: @item.Specialty</h5>
+                            <p class="list-group-item-text">От: @item.StartDate до @item.EndDate</p>
+                        </a>
+                    }
+                }
+            </div>
+        }
+    }
+</div>
+

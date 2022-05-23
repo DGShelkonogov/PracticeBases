@@ -1,0 +1,76 @@
+﻿@model Practice_bases.ViewModel.DetailsStudentViewModel
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Details";
+}
+
+@{
+    /*if (Model.isAdmin)
+    {*/
+        <form asp-action="DetailsStudentInfo" asp-controller="Search">
+    
+            <div class="form-group">
+                <h2 class="list-group-item-heading">Студент: </h2>
+                <input type="text"
+                       asp-for="BaseRow.Student.Name"
+                       class="form-control"
+                       placeholder="Студент"/>
+            </div>
+    
+            <div class="form-group">
+                <h2 class="list-group-item-heading">Группа: </h2>
+                @Html.DropDownList("selectedGroup", new SelectList(Model.Groups, null, "Title"))
+            </div>
+
+            <div class="form-group">
+                <p class="list-group-item-text">Руководитель от техникума: </p>
+                @Html.DropDownList("selectedSupervisorCol", new SelectList(Model.SupervisorsCol, null, "Name"))
+            </div>
+
+            <div class="form-group">
+                <p class="list-group-item-text">Организация: </p>
+                @Html.DropDownList("selectedOrganization", new SelectList(Model.Organizations, null, "Title"))
+            </div>
+    
+            <div class="form-group">
+                <p class="list-group-item-text">Руководитель от организации: </p>
+                @Html.DropDownList("selectedSupervisorOrg", new SelectList(Model.SupervisorsOrg, null, "Name"))
+            </div>
+
+            <div>
+                <asp:dropdownlist runat="server" id="ddlTest" DataTextField="DataSourceField"> 
+            
+                </asp:dropdownlist>
+            </div>
+
+
+            <div class="form-group">
+                <input type="submit" value="update" class="btn btn-default">
+            </div>
+    
+        </form>
+
+  
+        <div class="container-fluid">
+            <h2 class="list-group-item-heading">Студент: @Model.BaseRow.Student.Name</h2>
+            <p class="list-group-item-text">Группа: @Model.BaseRow.Group.Title.</p>
+            <p class="list-group-item-text">Руководитель от техникума: @Model.BaseRow.SupervisorCol.Human.Name.</p>
+            <p class="list-group-item-text">Телефон руководителя от техникума: @Model.BaseRow.SupervisorCol.Phone.Title</p>
+            <p class="list-group-item-text">Почта руководителя от техникума: @Model.BaseRow.SupervisorCol.Mail.Title</p>
+            <h2 class="list-group-item-heading">Организация: @Model.BaseRow.OrganizationPlus.Organization.Title</h2>
+            <p class="list-group-item-text">Руководитель от организации: @Model.BaseRow.SupervisorOrg.Human.Name.</p>
+            <p class="list-group-item-text">Телефон руководителя от организации: @Model.BaseRow.SupervisorOrg.Phone.Title</p>
+            <p class="list-group-item-text">Адресс организации: @Model.BaseRow.OrganizationPlus.Address.Title</p>
+            <p class="list-group-item-text">Сайт организации: @Model.BaseRow.OrganizationPlus.Website.Title</p>
+            <p class="list-group-item-text">Почта руководителя от организации: @Model.BaseRow.SupervisorOrg.Mail.Title</p>
+        </div>
+    
+}
+
+
+
+
+
+
+

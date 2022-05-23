@@ -1,0 +1,60 @@
+﻿@model Practice_bases.ViewModel.DetailsOrganizationViewModel
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Details";
+}
+
+@{
+    /*if (Model.isAdmin)
+    {*/
+        
+        <form asp-action="DetailsOrganization" asp-controller="Search">
+            <input type="hidden" asp-for="AddressNull" />
+            <input type="hidden" asp-for="OrganizationNull" />
+            <input type="hidden" asp-for="WebsiteNull" />
+            <input type="hidden" asp-for="Address.Id" />
+            <input type="hidden" asp-for="Organization.Id" />
+            <input type="hidden" asp-for="Website.Id" />
+    
+    
+            <div class="form-group">
+                <h2 class="list-group-item-heading">Организация: </h2>
+                <input type="text"
+                       asp-for="Organization.Title"
+                       class="form-control"
+                       placeholder="Организация"/>
+            </div>
+
+            <div class="form-group">
+                <p class="list-group-item-text">Адресс организации: </p>
+                <input type="text"
+                       asp-for="Address.Title"
+                       class="form-control"
+                       placeholder="Адресс организации"/>
+            </div>
+
+            <div class="form-group">
+                <p class="list-group-item-text">Сайт организации: </p>
+                <input type="text"
+                       asp-for="Website.Title"
+                       class="form-control"
+                       placeholder="Сайт организации"/>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="update" class="btn btn-default">
+            </div>
+        </form>
+    
+        <div class="container-fluid">
+            <h2 class="list-group-item-heading">Организация: @Model.Organization.Title</h2>
+            <p class="list-group-item-text">Адресс организации: @Model.Address.Title</p>
+            <p class="list-group-item-text">Сайт организации: @Model.Website.Title</p>
+        </div>
+    
+}
+
+
+
+
