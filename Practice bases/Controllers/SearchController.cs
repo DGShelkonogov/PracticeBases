@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Practice_bases.Models;
@@ -7,6 +8,8 @@ using Type = Practice_bases.Models.Type;
 
 namespace Practice_bases.Controllers;
 
+
+[Authorize]
 public class SearchController : Controller
 {
     private ApplicationContext _db;
@@ -16,10 +19,6 @@ public class SearchController : Controller
     public SearchController(ApplicationContext context)
     {
         _db = context;
-        /*string _userName = User.Identity.Name;
-        _user = _db.Users
-            .Include(x => x.Role)
-            .FirstOrDefault(u => u.Login == _userName);*/
     }
     
     
@@ -106,7 +105,7 @@ public class SearchController : Controller
             Organizations = _db.Organizations.ToList(),
             SupervisorsCol = _db.Humans.Where(x => x.Type == Type.College).ToList(),
             SupervisorsOrg = _db.Humans.Where(x => x.Type == Type.Organization).ToList(),
-            isAdmin = _user != null && _user.Role.Name.Equals("admin")
+            isAdmin = _user != null && (_user.Role == Role.ADMIN)
         };
         
         return View(model);
@@ -171,7 +170,7 @@ public class SearchController : Controller
             Address = baseRow.OrganizationPlus.Address,
             Organization = baseRow.OrganizationPlus.Organization,
             Website = baseRow.OrganizationPlus.Website,
-            isAdmin = _user != null && _user.Role.Name.Equals("admin")
+            isAdmin = _user != null && _user.Role == Role.ADMIN
         };
 
 
@@ -267,7 +266,7 @@ public class SearchController : Controller
             PhoneCol = baseRow.SupervisorCol.Phone,
             SupervisorCol = baseRow.SupervisorCol.Human,
             MailSupervisorCol = baseRow.SupervisorCol.Mail,
-            isAdmin = _user != null && _user.Role.Name.Equals("admin")
+            isAdmin = _user != null && _user.Role == Role.ADMIN
         };
         
         model.PhoneColNull = baseRow.SupervisorCol.Phone.Title.ToLower().Equals("не указано");
@@ -361,7 +360,7 @@ public class SearchController : Controller
             PhoneOrg = baseRow.SupervisorOrg.Phone,
             SupervisorOrg = baseRow.SupervisorOrg.Human,
             MailSupervisorOrg = baseRow.SupervisorOrg.Mail,
-            isAdmin = _user != null && _user.Role.Name.Equals("admin")
+            isAdmin = _user != null && _user.Role == Role.ADMIN
         };
         
         model.PhoneOrgNull = baseRow.SupervisorOrg.Phone.Title.ToLower().Equals("не указано");

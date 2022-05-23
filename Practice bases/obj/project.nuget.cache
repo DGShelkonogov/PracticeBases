@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4QR9VN7ly0XvfghX7mNRtLw4Q72/npr9qAYEv05K3gv1ze8igLwrhyZm/iPf2yZtDn8QabZ1Wk8jUitrTp6uCw==",
+  "dgSpecHash": "nAe36RYhu+KZTS2wZaYSwPDojUgPXOBPxQpEuTXXoxbHXfwQF3dQ5cTp5tgrIh+YujkQqlp3Z6CV1geaYPiJbg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dana\\RiderProjects\\Practice bases\\Practice bases\\Practice bases.csproj",
+  "projectFilePath": "C:\\Users\\dana\\RiderProjects\\PracticeBases\\Practice bases\\Practice bases.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dana\\.nuget\\packages\\microsoft.aspnetcore.authentication.negotiate\\6.0.4\\microsoft.aspnetcore.authentication.negotiate.6.0.4.nupkg.sha512",
     "C:\\Users\\dana\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\6.0.4\\microsoft.aspnetcore.connections.abstractions.6.0.4.nupkg.sha512",

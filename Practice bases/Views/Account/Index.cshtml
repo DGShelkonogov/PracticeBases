@@ -1,0 +1,20 @@
+﻿@model User
+
+@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+<div>
+      <a asp-action="Logout" asp-controller="Account">Выход</a>
+    @Model.Email
+    @Model.Role
+</div>
+</body>
+</html>

@@ -12,7 +12,7 @@ string connection = builder.Configuration.GetConnectionString("DefaultConnection
 builder.Services.AddDbContext<ApplicationContext>(options => options.UseNpgsql(connection));
 
 
-
+builder.WebHost.UseUrls("http://localhost:5000");
 
 // установка конфигурации подключения
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)

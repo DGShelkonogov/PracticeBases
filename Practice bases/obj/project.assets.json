@@ -1267,11 +1267,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dana\\RiderProjects\\Practice bases\\Practice bases\\Practice bases.csproj",
+      "projectUniqueName": "C:\\Users\\dana\\RiderProjects\\PracticeBases\\Practice bases\\Practice bases.csproj",
       "projectName": "Practice bases",
-      "projectPath": "C:\\Users\\dana\\RiderProjects\\Practice bases\\Practice bases\\Practice bases.csproj",
+      "projectPath": "C:\\Users\\dana\\RiderProjects\\PracticeBases\\Practice bases\\Practice bases.csproj",
       "packagesPath": "C:\\Users\\dana\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dana\\RiderProjects\\Practice bases\\Practice bases\\obj\\",
+      "outputPath": "C:\\Users\\dana\\RiderProjects\\PracticeBases\\Practice bases\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dana\\AppData\\Roaming\\NuGet\\NuGet.Config",

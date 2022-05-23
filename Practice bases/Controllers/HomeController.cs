@@ -11,7 +11,8 @@ using Type = Practice_bases.Models.Type;
 
 namespace Practice_bases.Controllers;
 
-//[Authorize(Roles = "admin")]
+
+[Authorize]
 public class HomeController : Controller
 {
     private ApplicationContext _db;
@@ -27,13 +28,12 @@ public class HomeController : Controller
         _parser = new Parser(context);
     }
     
-    [Authorize]
     public IActionResult Index()
     {
         var s = User.Identity.Name;
         return View(_db.Bases.Include(x => x.BaseRows).ToList());
     }
-
+    
     public IActionResult CreateBase()
     {
         return View(new BaseViewModel()
@@ -102,14 +102,18 @@ public class HomeController : Controller
             }
             
             Human Student = _parser.parseFIO(objs[1], Type.Student);
-            Human SupervisorCol = _parser.parseFIO(objs[2], Type.College);
-            Human SupervisorOrg = _parser.parseFIO(objs[3], Type.Organization);
-            Group Group = _parser.parseGroup(objs[4]);
-            Mail MailSupervisorCol = _parser.ParceMail(objs[5], Type.College);
-            Mail MailSupervisorOrg = _parser.ParceMail(objs[6], Type.Organization);
-            Phone PhoneCol = _parser.ParcePhone(objs[7], Type.College);
-            Phone PhoneOrg = _parser.ParcePhone(objs[8], Type.Organization);
-            Organization Organization = _parser.ParceOrganization(objs[9]);
+            Group Group = _parser.parseGroup(objs[2]);
+            Organization Organization = _parser.ParceOrganization(objs[3]);
+            
+            Human SupervisorCol = _parser.parseFIO(objs[4], Type.College);
+            Human SupervisorOrg = _parser.parseFIO(objs[5], Type.Organization);
+            
+            Mail MailSupervisorCol = _parser.ParceMail(objs[6], Type.College);
+            Mail MailSupervisorOrg = _parser.ParceMail(objs[7], Type.Organization);
+            
+            Phone PhoneCol = _parser.ParcePhone(objs[8], Type.College);
+            Phone PhoneOrg = _parser.ParcePhone(objs[9], Type.Organization);
+           
             Address Address = _parser.ParceAddress(objs[10]);
             Website Website = _parser.ParceWebsite(objs[11]);
 

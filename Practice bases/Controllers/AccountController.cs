@@ -1,6 +1,7 @@
 ﻿using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Practice_bases.Models;
@@ -8,25 +9,37 @@ using Practice_bases.ViewModel;
 
 namespace Practice_bases.Controllers;
 
+
+
 public class AccountController : Controller
 {
-    private ApplicationContext db;
+    private ApplicationContext _db;
     public AccountController(ApplicationContext context)
     {
-        db = context;
+        _db = context;
     }
     [HttpGet]
     public IActionResult Login()
     {
         return View();
     }
+
+    [Authorize]
+    public IActionResult Index()
+    {
+        String s = User.Identity.Name;
+        User user = _db.Users
+            .FirstOrDefault(x => x.Email.Equals(s));
+        return View(user);
+    }
+
     [HttpPost]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Login(LoginModel model)
     {
         if (ModelState.IsValid)
         {
-            User user = await db.Users
+            User user = await _db.Users
                 .FirstOrDefaultAsync(u => u.Email == model.Email 
                 && u.Password == model.Password);
             if (user != null)
@@ -50,24 +63,35 @@ public class AccountController : Controller
     {
         if (ModelState.IsValid)
         {
-            User user = await db.Users.FirstOrDefaultAsync(u => u.Email == model.Email);
+            User user = await _db.Users.FirstOrDefaultAsync(u => u.Email == model.Email);
             if (user == null)
             {
-                // добавляем пользователя в бд
-                db.Users.Add(new User
+                string email = model.Email;
+                int mailSymbol = email.IndexOf('@');
+                string domain = email.Substring(mailSymbol);
+                if (domain.Equals("@mpt.ru"))
                 {
-                    Email = model.Email, 
-                    Password = model.Password,
-                    Login = model.Login
-                });
-                await db.SaveChangesAsync();
+                    string key = MailHelper.Generate();
+                    MailHelper.SendEmailAsync(email, key).GetAwaiter();
+                    
+                    // добавляем пользователя в бд
+                    _db.Users.Add(new User
+                    {
+                        Email = model.Email, 
+                        Password = model.Password,
+                        Login = model.Login,
+                        Role = Role.UNCONFIRMED,
+                        Key = key
+                    });
+                    await _db.SaveChangesAsync();
  
-                await Authenticate(model.Email); // аутентификация
+                    await Authenticate(model.Email); // аутентификация
  
-                return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "Home");
+                }
             }
             else
-                ModelState.AddModelError("", "Некорректные логин и(или) пароль");
+                ModelState.AddModelError("", "Такой пользователь уже существует");
         }
         return View(model);
     }
@@ -80,7 +104,8 @@ public class AccountController : Controller
             new Claim(ClaimsIdentity.DefaultNameClaimType, userName)
         };
         // создаем объект ClaimsIdentity
-        ClaimsIdentity id = new ClaimsIdentity(claims, "ApplicationCookie", ClaimsIdentity.DefaultNameClaimType, ClaimsIdentity.DefaultRoleClaimType);
+        ClaimsIdentity id = new ClaimsIdentity(claims, "ApplicationCookie",
+            ClaimsIdentity.DefaultNameClaimType, ClaimsIdentity.DefaultRoleClaimType);
         // установка аутентификационных куки
         await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(id));
     }
@@ -89,5 +114,18 @@ public class AccountController : Controller
     {
         await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
         return RedirectToAction("Login", "Account");
-    } 
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> Activation(string key)
+    {
+        var user = _db.Users.FirstOrDefault(x => x.Key.Equals(key));
+        if (user != null)
+        {
+            user.Role = Role.USER;
+            _db.Users.Update(user);
+            await _db.SaveChangesAsync();
+        }
+        return RedirectToAction("Index");
+    }
 }
