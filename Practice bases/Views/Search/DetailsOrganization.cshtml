@@ -6,18 +6,18 @@
 }
 
 @{
-    /*if (Model.isAdmin)
-    {*/
-        
+    if (Model.isAdmin)
+    {
+
         <form asp-action="DetailsOrganization" asp-controller="Search">
-            <input type="hidden" asp-for="AddressNull" />
-            <input type="hidden" asp-for="OrganizationNull" />
-            <input type="hidden" asp-for="WebsiteNull" />
-            <input type="hidden" asp-for="Address.Id" />
-            <input type="hidden" asp-for="Organization.Id" />
-            <input type="hidden" asp-for="Website.Id" />
-    
-    
+            <input type="hidden" asp-for="AddressNull"/>
+            <input type="hidden" asp-for="OrganizationNull"/>
+            <input type="hidden" asp-for="WebsiteNull"/>
+            <input type="hidden" asp-for="Address.Id"/>
+            <input type="hidden" asp-for="Organization.Id"/>
+            <input type="hidden" asp-for="Website.Id"/>
+
+
             <div class="form-group">
                 <h2 class="list-group-item-heading">Организация: </h2>
                 <input type="text"
@@ -46,13 +46,15 @@
                 <input type="submit" value="update" class="btn btn-default">
             </div>
         </form>
-    
+
+    }else{
         <div class="container-fluid">
             <h2 class="list-group-item-heading">Организация: @Model.Organization.Title</h2>
             <p class="list-group-item-text">Адресс организации: @Model.Address.Title</p>
             <p class="list-group-item-text">Сайт организации: @Model.Website.Title</p>
         </div>
-    
+    }
+
 }
 
 

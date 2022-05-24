@@ -27,11 +27,28 @@ public class ApplicationContext : DbContext
     
     public DbSet<Website> Websites { get; set; }
     public DbSet<User> Users { get; set; }
+    public DbSet<Role> Roles { get; set; }
     
     public ApplicationContext(DbContextOptions<ApplicationContext> options)
         : base(options)
     {
         Database.EnsureCreated();
+    }
+    
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        string adminRoleName = "Admin";
+        string userRoleName = "User";
+        string unconfirmedRoleName = "Unconfirmed";
+        
+        // добавляем роли
+        Role adminRole = new Role { Id = 1, Name = adminRoleName };
+        Role userRole = new Role { Id = 2, Name = userRoleName };
+        Role unconfirmedRole = new Role { Id = 3, Name = unconfirmedRoleName };
+        
+        modelBuilder.Entity<Role>().HasData(new Role[] { adminRole, userRole, unconfirmedRole });
+        
+        base.OnModelCreating(modelBuilder);
     }
     
     

@@ -29,6 +29,7 @@ public class AccountController : Controller
     {
         String s = User.Identity.Name;
         User user = _db.Users
+            .Include(x => x.Role)
             .FirstOrDefault(x => x.Email.Equals(s));
         return View(user);
     }
@@ -40,11 +41,12 @@ public class AccountController : Controller
         if (ModelState.IsValid)
         {
             User user = await _db.Users
+                .Include(x => x.Role)
                 .FirstOrDefaultAsync(u => u.Email == model.Email 
                 && u.Password == model.Password);
             if (user != null)
             {
-                await Authenticate(model.Email); // аутентификация
+                await Authenticate(user); // аутентификация
  
                 return RedirectToAction("Index", "Home");
             }
@@ -63,8 +65,8 @@ public class AccountController : Controller
     {
         if (ModelState.IsValid)
         {
-            User user = await _db.Users.FirstOrDefaultAsync(u => u.Email == model.Email);
-            if (user == null)
+            User _user = await _db.Users.FirstOrDefaultAsync(u => u.Email == model.Email);
+            if (_user == null)
             {
                 string email = model.Email;
                 int mailSymbol = email.IndexOf('@');
@@ -73,19 +75,21 @@ public class AccountController : Controller
                 {
                     string key = MailHelper.Generate();
                     MailHelper.SendEmailAsync(email, key).GetAwaiter();
-                    
-                    // добавляем пользователя в бд
-                    _db.Users.Add(new User
+                    Role role = _db.Roles.FirstOrDefault(x => x.Name.Equals("Unconfirmed"));
+
+                    var user = new User()
                     {
-                        Email = model.Email, 
+                        Email = model.Email,
                         Password = model.Password,
                         Login = model.Login,
-                        Role = Role.UNCONFIRMED,
+                        Role = role,
                         Key = key
-                    });
+                    };
+                    // добавляем пользователя в бд
+                    _db.Users.Add(user);
                     await _db.SaveChangesAsync();
  
-                    await Authenticate(model.Email); // аутентификация
+                    await Authenticate(user); // аутентификация
  
                     return RedirectToAction("Index", "Home");
                 }
@@ -96,16 +100,18 @@ public class AccountController : Controller
         return View(model);
     }
  
-    private async Task Authenticate(string userName)
+    
+    private async Task Authenticate(User user)
     {
         // создаем один claim
         var claims = new List<Claim>
         {
-            new Claim(ClaimsIdentity.DefaultNameClaimType, userName)
+            new Claim(ClaimsIdentity.DefaultNameClaimType, user.Email),
+            new Claim(ClaimsIdentity.DefaultRoleClaimType, user.Role?.Name)
         };
         // создаем объект ClaimsIdentity
-        ClaimsIdentity id = new ClaimsIdentity(claims, "ApplicationCookie",
-            ClaimsIdentity.DefaultNameClaimType, ClaimsIdentity.DefaultRoleClaimType);
+        ClaimsIdentity id = new ClaimsIdentity(claims, "ApplicationCookie", ClaimsIdentity.DefaultNameClaimType,
+            ClaimsIdentity.DefaultRoleClaimType);
         // установка аутентификационных куки
         await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(id));
     }
@@ -120,12 +126,22 @@ public class AccountController : Controller
     public async Task<IActionResult> Activation(string key)
     {
         var user = _db.Users.FirstOrDefault(x => x.Key.Equals(key));
+        Role role = _db.Roles.FirstOrDefault(x => x.Name.Equals("User"));
         if (user != null)
         {
-            user.Role = Role.USER;
+            user.Role = role;
             _db.Users.Update(user);
             await _db.SaveChangesAsync();
+            Authenticate(user);
         }
         return RedirectToAction("Index");
     }
+
+    public IActionResult AccessDenied(string ReturnUrl)
+    {
+        return View();
+    }
+    
+    
+  
 }

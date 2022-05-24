@@ -6,17 +6,17 @@
 }
 
 @{
-    /*if (Model.isAdmin)
-    {*/
+    if (Model.isAdmin)
+    {
         <form asp-action="DetailsSupervisorOrg" asp-controller="Search">
-            <input type="hidden" asp-for="PhoneOrgNull" />
-            <input type="hidden" asp-for="SupervisorOrgNull" />
-            <input type="hidden" asp-for="MailSupervisorOrgNull" />
-            <input type="hidden" asp-for="PhoneOrg.Id" />
-            <input type="hidden" asp-for="SupervisorOrg.Id" />
-            <input type="hidden" asp-for="MailSupervisorOrg.Id" />
-    
-    
+            <input type="hidden" asp-for="PhoneOrgNull"/>
+            <input type="hidden" asp-for="SupervisorOrgNull"/>
+            <input type="hidden" asp-for="MailSupervisorOrgNull"/>
+            <input type="hidden" asp-for="PhoneOrg.Id"/>
+            <input type="hidden" asp-for="SupervisorOrg.Id"/>
+            <input type="hidden" asp-for="MailSupervisorOrg.Id"/>
+
+
             <div class="form-group">
                 <h2 class="list-group-item-heading">Руководитель от техникума: </h2>
                 <input type="text"
@@ -45,12 +45,12 @@
                 <input type="submit" value="update" class="btn btn-default">
             </div>
         </form>
- 
+    }else{
         <div class="container-fluid">
             <p class="list-group-item-text">Руководитель от организации: @Model.SupervisorOrg.Name.</p>
             <p class="list-group-item-text">Телефон руководителя от организации: @Model.PhoneOrg.Title</p>
             <p class="list-group-item-text">Почта руководителя от организации: @Model.MailSupervisorOrg.Title</p>
         </div>
-    
+    }
 }
 

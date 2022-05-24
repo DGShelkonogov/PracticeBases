@@ -2,13 +2,6 @@
 
 namespace Practice_bases.Models;
 
-public enum Role
-{
-    ADMIN,
-    USER,
-    UNCONFIRMED
-}
-
 
 public class User
 {

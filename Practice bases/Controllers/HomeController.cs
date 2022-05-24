@@ -12,7 +12,7 @@ using Type = Practice_bases.Models.Type;
 namespace Practice_bases.Controllers;
 
 
-[Authorize]
+
 public class HomeController : Controller
 {
     private ApplicationContext _db;
@@ -28,12 +28,15 @@ public class HomeController : Controller
         _parser = new Parser(context);
     }
     
+    [Authorize(Roles = "User, Admin")]
     public IActionResult Index()
     {
         var s = User.Identity.Name;
         return View(_db.Bases.Include(x => x.BaseRows).ToList());
     }
     
+
+    [Authorize(Roles = "Admin")]
     public IActionResult CreateBase()
     {
         return View(new BaseViewModel()
@@ -43,6 +46,7 @@ public class HomeController : Controller
     }
     
     
+    [Authorize(Roles = "Admin")]
     public async Task<IActionResult> ImportFile(BaseViewModel BaseViewModel)
     {
         try
@@ -66,6 +70,7 @@ public class HomeController : Controller
     }
     
     
+    [Authorize(Roles = "Admin")]
     void openExcel(string path, Base _base)
     {
         Excel.Application ObjExcel = new Excel.Application();
